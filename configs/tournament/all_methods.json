@@ -1,0 +1,30 @@
+{
+    "players": [
+        ["src.players.agents.agent1_regret_matching", "BestPlayer1", {}, "Agent1"],
+        ["src.players.agents.agent2_belief_pimc", "BestPlayer2", {}, "Agent2"],
+        ["src.players.agents.experiments.best_player16", "BestPlayer16", {}, "BP16"],
+        ["src.players.agents.experiments.best_player26", "BestPlayer26", {}, "BP26"],
+        ["src.players.agents.experiments.best_player8", "BestPlayer8", {}, "BP8"],
+        ["src.players.agents.experiments.best_player29", "BestPlayer29", {}, "BP29"],
+        ["src.players.agents.experiments.best_player31", "BestPlayer31", {}, "BP31"],
+        ["src.players.agents.experiments.best_player17", "BestPlayer17", {}, "BP17"],
+        ["src.players.agents.experiments.best_player30", "BestPlayer30", {}, "BP30"],
+        ["src.players.agents.experiments.best_player19", "BestPlayer19", {}, "BP19"],
+        ["src.players.baselines.random_player", "RandomPlayer", {}, "Random-1"],
+        ["src.players.baselines.random_player", "RandomPlayer", {}, "Random-2"]
+    ],
+    "engine": {
+        "n_players": 4,
+        "n_rounds": 10,
+        "verbose": false,
+        "timeout": 1.0,
+        "timeout_buffer": 0.5
+    },
+    "tournament": {
+        "grading_mode": true,
+        "type": "random_partition",
+        "duplication_mode": "cycle",
+        "num_games_per_player": 50,
+        "num_workers": 4
+    }
+}

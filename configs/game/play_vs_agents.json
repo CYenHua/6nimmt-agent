@@ -1,0 +1,14 @@
+{
+    "players": [
+        ["src.players.baselines.human_player", "HumanPlayer", {}, "You"],
+        ["src.players.agents.agent1_regret_matching", "BestPlayer1", {}, "Agent1-RegretMatching"],
+        ["src.players.agents.agent2_belief_pimc", "BestPlayer2", {}, "Agent2-BeliefPIMC"],
+        ["src.players.agents.experiments.best_player8", "BestPlayer8", {}, "BP8-Heuristic"]
+    ],
+    "engine": {
+        "n_players": 4,
+        "n_rounds": 10,
+        "verbose": false
+    },
+    "num_games": 1
+}
